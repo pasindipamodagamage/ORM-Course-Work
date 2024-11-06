@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controllers.LoginController">
+
+    <!-- Username Field -->
+    <Label layoutX="150.0" layoutY="120.0" text="Username:" />
+    <TextField fx:id="txtUsername" layoutX="270.0" layoutY="115.0" prefWidth="200.0" promptText="Enter Username or User ID" />
+
+    <!-- Password Field -->
+    <Label layoutX="150.0" layoutY="180.0" text="Password:" />
+    <PasswordField fx:id="txtPassword" layoutX="270.0" layoutY="175.0" prefWidth="200.0" promptText="Enter Password" />
+
+    <!-- Login Button -->
+    <Button fx:id="btnLogin" layoutX="270.0" layoutY="240.0" onAction="#handleLoginAction" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Login" />
+   <Label layoutX="248.0" layoutY="35.0" prefHeight="48.0" prefWidth="140.0" text="Login">
+      <font>
+         <Font name="System Bold" size="34.0" />
+      </font>
+   </Label>
+
+</AnchorPane>
