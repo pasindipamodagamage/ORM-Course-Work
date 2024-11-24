@@ -3,7 +3,6 @@ package lk.ijse.Entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.Date;
 import java.util.List;
 
 @AllArgsConstructor
@@ -25,4 +24,5 @@ public class Student {
 
     @ManyToOne
     private User user;
+
 }

@@ -1,6 +1,6 @@
-package lk.ijse.DAO.Impl;
+package lk.ijse.DAO.Impl.Custom;
 
-import lk.ijse.DAO.PaymentDAO;
+import lk.ijse.DAO.Impl.PaymentDAO;
 import lk.ijse.Entity.Payment;
 
 import java.sql.SQLException;

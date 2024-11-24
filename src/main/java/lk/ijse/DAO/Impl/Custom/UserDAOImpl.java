@@ -1,6 +1,6 @@
-package lk.ijse.DAO.Impl;
+package lk.ijse.DAO.Impl.Custom;
 
-import lk.ijse.DAO.UserDAO;
+import lk.ijse.DAO.Impl.UserDAO;
 import lk.ijse.Entity.User;
 import lk.ijse.config.FactoryConfiguration;
 import org.hibernate.Session;

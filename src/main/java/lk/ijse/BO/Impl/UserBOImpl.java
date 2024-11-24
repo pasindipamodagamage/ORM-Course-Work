@@ -2,7 +2,7 @@ package lk.ijse.BO.Impl;
 
 import lk.ijse.BO.UserBO;
 import lk.ijse.DAO.DAOFactory;
-import lk.ijse.DAO.UserDAO;
+import lk.ijse.DAO.Impl.UserDAO;
 import lk.ijse.DTO.UserDTO;
 import lk.ijse.Entity.User;
 

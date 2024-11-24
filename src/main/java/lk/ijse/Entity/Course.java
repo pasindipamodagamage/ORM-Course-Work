@@ -13,7 +13,6 @@ import java.util.List;
 @Setter
 public class Course {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String course_id;
     private String course_name;
     private String duration;

@@ -7,9 +7,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import lk.ijse.BO.Impl.BOFactory;
+import lk.ijse.BO.BOFactory;
 import lk.ijse.BO.StudentBO;
-import lk.ijse.DTO.StudentDTO;
 
 public class StudentController {
 
@@ -100,4 +99,6 @@ public class StudentController {
 
     }
 
+    public void cmbUserOnAction(ActionEvent actionEvent) {
+    }
 }

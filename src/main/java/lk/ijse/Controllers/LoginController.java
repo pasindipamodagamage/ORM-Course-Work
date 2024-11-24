@@ -11,7 +11,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import lk.ijse.DAO.DAOFactory;
-import lk.ijse.DAO.UserDAO;
+import lk.ijse.DAO.Impl.UserDAO;
 import lk.ijse.Entity.User;
 import lk.ijse.util.PasswordVerifier;
 

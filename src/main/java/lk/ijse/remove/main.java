@@ -1,4 +1,4 @@
-package lk.ijse;
+package lk.ijse.remove;
 
 import lk.ijse.config.FactoryConfiguration;
 import org.hibernate.Session;

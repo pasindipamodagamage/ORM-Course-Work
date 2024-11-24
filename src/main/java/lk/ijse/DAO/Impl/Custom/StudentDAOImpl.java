@@ -1,6 +1,6 @@
-package lk.ijse.DAO.Impl;
+package lk.ijse.DAO.Impl.Custom;
 
-import lk.ijse.DAO.StudentDAO;
+import lk.ijse.DAO.Impl.StudentDAO;
 import lk.ijse.Entity.Course;
 
 import java.sql.SQLException;

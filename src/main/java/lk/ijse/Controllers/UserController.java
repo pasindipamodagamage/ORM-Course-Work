@@ -10,7 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-import lk.ijse.BO.Impl.BOFactory;
+import lk.ijse.BO.BOFactory;
 import lk.ijse.BO.Impl.UserBOImpl;
 import lk.ijse.BO.UserBO;
 import lk.ijse.DTO.UserDTO;
