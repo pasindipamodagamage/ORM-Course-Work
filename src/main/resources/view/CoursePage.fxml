@@ -14,33 +14,33 @@
     <Label layoutX="20.0" layoutY="113.0" text="Program ID:" />
 
     <Label layoutX="20.0" layoutY="155.0" text="Program Name:" />
-    <TextField fx:id="txtProgramName" layoutX="120.0" layoutY="155.0" prefWidth="150.0" promptText="Enter Program Name" />
+    <TextField fx:id="txtProgramName" layoutX="120.0" layoutY="155.0" onKeyTyped="#Programme_Name" prefWidth="150.0" promptText="Enter Program Name" />
 
     <Label layoutX="20.0" layoutY="206.0" text="Duration:" />
-    <TextField fx:id="txtDuration" layoutX="120.0" layoutY="206.0" prefWidth="150.0" promptText="Enter Duration" />
+    <TextField fx:id="txtDuration" layoutX="120.0" layoutY="206.0" onKeyTyped="#Duration" prefWidth="150.0" promptText="Enter Duration" />
 
     <Label layoutX="20.0" layoutY="259.0" text="Course Fee:" />
-    <TextField fx:id="txtCourseFee" layoutX="120.0" layoutY="259.0" prefWidth="150.0" promptText="Enter Course Fee" />
+    <TextField fx:id="txtCourseFee" layoutX="120.0" layoutY="259.0" onKeyTyped="#Course_Fee" prefWidth="150.0" promptText="Enter Course Fee" />
 
     <!-- Action Buttons -->
     <Button fx:id="btnAdd" layoutX="20.0" layoutY="365.0" onAction="#btnAddOnAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Add" />
     <Button fx:id="btnUpdate" layoutX="80.0" layoutY="365.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #FF9800; -fx-text-fill: white;" text="Update" />
     <Button fx:id="btnDelete" layoutX="150.0" layoutY="365.0" onAction="#btnDeleteOnAction" style="-fx-background-color: #f44336; -fx-text-fill: white;" text="Delete" />
     <Button fx:id="btnClear" layoutX="220.0" layoutY="365.0" onAction="#btnClearOnAction" style="-fx-background-color: #607D8B; -fx-text-fill: white;" text="Clear" />
-   <Label fx:id="lblCourseID" layoutX="123.0" layoutY="114.0" prefHeight="18.0" prefWidth="140.0" />
-   <Label layoutX="102.0" layoutY="16.0" prefHeight="44.0" prefWidth="140.0" text="Course">
-      <font>
-         <Font name="System Bold" size="28.0" />
-      </font>
-   </Label>
-   <Button fx:id="btnBack" layoutX="20.0" layoutY="60.0" onAction="#btnBackOnAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Back" />
-   <TableView fx:id="tblCourse" layoutX="328.0" layoutY="38.0" prefHeight="442.0" prefWidth="483.0">
-     <columns>
-       <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
-       <TableColumn fx:id="colProgramme" prefWidth="138.0" text="Programe" />
-         <TableColumn fx:id="colDuration" prefWidth="142.0" text="Duration" />
-         <TableColumn fx:id="colFee" prefWidth="125.0" text="Course Fee" />
-     </columns>
-   </TableView>
+    <Label fx:id="lblCourseID" layoutX="123.0" layoutY="114.0" prefHeight="18.0" prefWidth="140.0" />
+    <Label layoutX="102.0" layoutY="16.0" prefHeight="44.0" prefWidth="140.0" text="Course">
+        <font>
+            <Font name="System Bold" size="28.0" />
+        </font>
+    </Label>
+    <Button fx:id="btnBack" layoutX="20.0" layoutY="60.0" onAction="#btnBackOnAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Back" />
+    <TableView fx:id="tblCourse" layoutX="328.0" layoutY="38.0" prefHeight="442.0" prefWidth="483.0">
+        <columns>
+            <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="colProgramme" prefWidth="138.0" text="Programe" />
+            <TableColumn fx:id="colDuration" prefWidth="142.0" text="Duration" />
+            <TableColumn fx:id="colFee" prefWidth="125.0" text="Course Fee" />
+        </columns>
+    </TableView>
 
 </AnchorPane>
