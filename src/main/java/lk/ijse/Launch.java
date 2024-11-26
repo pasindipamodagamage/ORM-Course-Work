@@ -15,12 +15,8 @@ public class Launch extends Application {
     public void start(Stage stage) throws Exception {
         stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/loginPage.fxml"))));
         stage.centerOnScreen();
-        stage.setTitle("ORM POS");
+        stage.setTitle("Institute Of Management");
         stage.show();
 
-        /*stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/User.fxml"))));
-        stage.centerOnScreen();
-        stage.setTitle("ORM POS");
-        stage.show();
-*/    }
+   }
 }

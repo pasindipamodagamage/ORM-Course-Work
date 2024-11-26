@@ -4,30 +4,85 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="456.0" prefWidth="727.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controllers.LoginController">
-
-    <!-- Username Field -->
-    <Label layoutX="150.0" layoutY="120.0" text="Username:" />
-    <TextField fx:id="txtUsername" layoutX="270.0" layoutY="115.0" prefWidth="200.0" promptText="Enter Username or User ID" />
-
-    <!-- Password Field -->
-    <Label layoutX="150.0" layoutY="180.0" text="Password:" />
-    <PasswordField fx:id="txtPassword" layoutX="270.0" layoutY="175.0" prefWidth="200.0" promptText="Enter Password" />
-
-    <!-- Login Button -->
-    <Button fx:id="btnLogin" layoutX="270.0" layoutY="240.0" onAction="#handleLoginAction" prefWidth="200.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Login" />
-   <Label layoutX="248.0" layoutY="35.0" prefHeight="48.0" prefWidth="140.0" text="Login">
+<AnchorPane prefHeight="406.0" prefWidth="374.0" style="-fx-background-color: #f0f0f0; -fx-border-image-width: 5px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controllers.LoginController">
+   <ImageView fitHeight="698.0" fitWidth="700.0" layoutX="-20.0" layoutY="-177.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/login_wallpaper.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="23.0" layoutY="265.0" prefHeight="48.0" prefWidth="198.0" style="-fx-background-color: #2A394E; -fx-background-radius: 30px;" text=" Institute" textFill="WHITE">
       <font>
-         <Font name="System Bold" size="34.0" />
+         <Font name="System Bold" size="36.0" />
       </font>
    </Label>
-   <Label fx:id="LblLogin" layoutX="626.0" layoutY="411.0" prefHeight="18.0" prefWidth="79.0">
+   <Label fx:id="LblLogin" layoutX="611.0" layoutY="494.0" prefHeight="20.0" prefWidth="46.0" text="LOGIN ID" textFill="#ffffff6b">
       <font>
-         <Font name="System Bold Italic" size="16.0" />
+         <Font name="Garuda Bold" size="10.0" />
       </font>
    </Label>
+   <Label layoutX="19.0" layoutY="316.0" prefHeight="30.0" prefWidth="56.0" text="  Of" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label layoutX="21.0" layoutY="348.0" prefHeight="48.0" prefWidth="288.0" text=" Management" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="36.0" />
+      </font>
+   </Label>
+   <Label layoutX="40.0" layoutY="395.0" prefHeight="19.0" prefWidth="309.0" text="B  R  I  G  H  T  W  A  Y    T  O    Y  O  U  R    F  U  T  U  R  E" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="9.0" />
+      </font>
+   </Label>
+   <AnchorPane layoutX="361.0" layoutY="149.0" prefHeight="332.0" prefWidth="274.0" style="-fx-background-color: #006A67; -fx-background-radius: 20px 0px;">
+      <children>
+      
+                <!-- Username Field -->
+          <Label layoutX="29.0" layoutY="92.0" text="User Name" textFill="WHITE">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+          <PasswordField fx:id="txtPassword" layoutX="30.0" layoutY="196.0" prefHeight="33.0" prefWidth="221.0" promptText="Enter Your Password">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </PasswordField>
+      
+                <!-- Password Field -->
+          <Label layoutX="30.0" layoutY="171.0" text="Password" textFill="WHITE">
+            <font>
+               <Font size="15.0" />
+            </font></Label>
+      
+                <!-- Login Button -->
+          <Button fx:id="btnLogin" layoutX="32.0" layoutY="270.0" onAction="#handleLoginAction" prefHeight="33.0" prefWidth="221.0" style="-fx-background-color: #FF7F3E; -fx-text-fill: white;" text="LOGIN ">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Button>
+          <TextField fx:id="txtUsername" layoutX="28.0" layoutY="118.0" prefHeight="33.0" prefWidth="221.0" promptText="Enter User Name or User ID">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="208.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../images/login_icon.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+   <ImageView fitHeight="136.0" fitWidth="145.0" layoutX="429.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../images/INSTITUTE-LOGO.png" />
+      </image>
+   </ImageView>
 
 </AnchorPane>
