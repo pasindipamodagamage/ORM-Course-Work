@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.ComboBox?>
+        <?import javafx.scene.control.Label?>
+        <?import javafx.scene.control.TableColumn?>
+        <?import javafx.scene.control.TableView?>
+        <?import javafx.scene.layout.AnchorPane?>
+        <?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controllers.StudentRegisterController">
+
+<!-- Title -->
+<Label layoutX="750.0" layoutY="30.0" text="Student Registration" style="-fx-text-fill: black;">
+    <font>
+        <Font name="Arial Bold" size="36.0" />
+    </font>
+</Label>
+
+<!-- Combo Boxes for Student ID and Course ID -->
+<ComboBox fx:id="cmbStudentPhoneNumber" layoutX="30.0" layoutY="100.0" onAction="#cmbStudentOnAction" prefWidth="300.0" promptText="Select Student Contact" style="-fx-font-size: 16px;" />
+<ComboBox fx:id="cmbCourseName" layoutX="360.0" layoutY="100.0" onAction="#cmbCourseOnAction" prefWidth="300.0" promptText="Select Course Name" style="-fx-font-size: 16px;" />
+
+<!-- Labels for Student and Course Details -->
+<Label layoutX="30.0" layoutY="160.0" text="Student Name:" style="-fx-text-fill: black; -fx-font-size: 18px;" />
+<Label fx:id="lblStudentName1" layoutX="200.0" layoutY="160.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" />
+
+<Label layoutX="30.0" layoutY="200.0" text="Student ID:" style="-fx-text-fill: black; -fx-font-size: 18px;" />
+<Label fx:id="lblStudentID" layoutX="200.0" layoutY="200.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" />
+
+<Label layoutX="30.0" layoutY="240.0" text="Course ID:" style="-fx-text-fill: black; -fx-font-size: 18px;" />
+<Label fx:id="lblCourseID" layoutX="200.0" layoutY="240.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" />
+
+<Label layoutX="30.0" layoutY="280.0" text="Fee:" style="-fx-text-fill: black; -fx-font-size: 18px;" />
+<Label fx:id="lblFee1" layoutX="200.0" layoutY="280.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" />
+
+<Label layoutX="30.0" layoutY="320.0" text="Payment ID:" style="-fx-text-fill: black; -fx-font-size: 18px;" />
+<Label fx:id="lblPaymentId1" layoutX="200.0" layoutY="320.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" />
+
+<Label layoutX="30.0" layoutY="360.0" text="Date:" style="-fx-text-fill: black; -fx-font-size: 18px;" />
+<Label fx:id="lblDate1" layoutX="200.0" layoutY="360.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" />
+
+<Label layoutX="30.0" layoutY="400.0" text="Student Course ID:" style="-fx-text-fill: black; -fx-font-size: 18px;" />
+<Label fx:id="lblStudentCourseId1" layoutX="200.0" layoutY="400.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" />
+
+<Label layoutX="30.0" layoutY="440.0" text="Duration:" style="-fx-text-fill: black; -fx-font-size: 18px;" />
+<Label fx:id="lblDuration" layoutX="200.0" layoutY="440.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" />
+
+<!-- Action Buttons -->
+<Button fx:id="btnAdd" layoutX="30.0" layoutY="480.0" onAction="#btnAddOnAction" prefWidth="100.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px;" text="Add" />
+<Button fx:id="btnUpdate" layoutX="150.0" layoutY="480.0" onAction="#btnUpdateOnAction" prefWidth="100.0" style="-fx-background-color: #FF9800; -fx-text-fill: white; -fx-font-size: 16px;" text="Update" />
+<Button fx:id="btnDelete" layoutX="270.0" layoutY="480.0" onAction="#btnDeleteOnAction" prefWidth="100.0" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 16px;" text="Delete" />
+<Button fx:id="btnClear" layoutX="390.0" layoutY="480.0" onAction="#btnClearOnAction" prefWidth="100.0" style="-fx-background-color: #607D8B; -fx-text-fill: white; -fx-font-size: 16px;" text="Clear" />
+
+<!-- TableView -->
+<TableView fx:id="tblStudentCourse" layoutX="30.0" layoutY="550.0" prefHeight="400.0" prefWidth="1860.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;">
+    <columns>
+        <TableColumn fx:id="colStudentId" prefWidth="400.0" text="Student ID" />
+        <TableColumn fx:id="colCourseId" prefWidth="400.0" text="Course ID" />
+        <TableColumn fx:id="colDate" prefWidth="400.0" text="Date" />
+        <TableColumn fx:id="colStudentCourseId" prefWidth="400.0" text="Student Course ID" />
+    </columns>
+</TableView>
+
+<!-- Back Button -->
+<Button fx:id="btnBack" layoutX="1800.0" layoutY="50.0" onAction="#btnBackOnAction" prefWidth="100.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px;" text="Back" />
+
+</AnchorPane>

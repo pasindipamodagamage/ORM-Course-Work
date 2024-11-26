@@ -1,6 +1,9 @@
 package lk.ijse.DTO;
 
+import lk.ijse.Entity.Student_Course;
 import lombok.*;
+
+import java.sql.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -11,7 +14,7 @@ import lombok.*;
 @Data
 public class PaymentDTO {
     private String pay_id;
-    private String pay_date;
+    private Date pay_date;
     private double pay_amount;
-    private String status;
+    private Student_CourseDTO studentCourse;
 }

@@ -1,13 +1,15 @@
-package lk.ijse.Entity.EntityTM;
+package lk.ijse.Entity.EntityTm;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-public class StudentTable {
+public class StudentTm {
     private String stu_id;
     private String stu_name;
     private String stu_phone;
