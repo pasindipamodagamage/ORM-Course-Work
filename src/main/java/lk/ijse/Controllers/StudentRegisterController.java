@@ -301,6 +301,7 @@ public class StudentRegisterController {
             }
         } catch (Exception e) {
             new Alert(Alert.AlertType.ERROR, "An error occurred: " + e.getMessage()).show();
+//            System.out.println(e.getMessage());
         }
     }
 

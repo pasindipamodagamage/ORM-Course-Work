@@ -29,5 +29,3 @@ public class Student_Course {
     @OneToMany(mappedBy = "student_course", cascade = CascadeType.ALL)
     private List<Payment> payments;
 }
-
-/*Student register join query*/
