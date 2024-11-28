@@ -13,8 +13,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Data
 @Entity
-@Getter
-@Setter
+
 public class User {
     @Id
     private String user_id;

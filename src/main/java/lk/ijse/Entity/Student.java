@@ -9,8 +9,8 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Entity
-@Getter
-@Setter
+//@Getter
+//@Setter
 public class Student {
     @Id
     private String stu_id;
@@ -19,7 +19,7 @@ public class Student {
     private String stu_email;
     private String stu_address;
 
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private List<Student_Course> studentCourses;
 
     @ManyToOne

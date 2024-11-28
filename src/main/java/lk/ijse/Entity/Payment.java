@@ -6,12 +6,11 @@ import lombok.*;
 
 import java.sql.Date;
 
-@Entity
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Getter
-@Setter
+@Entity
 public class Payment {
     @Id
     private String pay_id;

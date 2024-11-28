@@ -9,8 +9,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Entity
-@Getter
-@Setter
+
 public class Course {
     @Id
     private String course_id;
@@ -18,7 +17,7 @@ public class Course {
     private String duration;
     private double course_fee;
 
-    @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "course", cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private List<Student_Course> studentCourses;
 
     public Course(String courseId, String courseName, String duration, double courseFee) {

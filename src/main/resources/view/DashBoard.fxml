@@ -24,7 +24,7 @@
             </graphic>
          </Button>
          <Label prefHeight="31.0" prefWidth="81.0" />
-           <Button fx:id="btnStudentRegister" onAction="#btnStudentRegisterOnAction" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: #006A67;" text="  Study Log" textFill="WHITE">
+           <Button fx:id="btnStudentRegister" onAction="#btnStudentRegisterOnAction" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: #006A67;" text="  StudyLog" textFill="WHITE">
             <graphic>
                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -33,11 +33,11 @@
                </ImageView>
             </graphic>
          </Button>
-           <Button fx:id="btnPayment" onAction="#btnPaymentOnAction" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: #006A67;" text="  Payment" textFill="WHITE">
+           <Button fx:id="btnCourse" onAction="#btnCourseOnAction" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: #006A67;" text="  Course" textFill="WHITE">
             <graphic>
                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                   <image>
-                     <Image url="@../images/payment_icon.png" />
+                     <Image url="@../images/courses.png" />
                   </image>
                </ImageView>
             </graphic></Button>
@@ -49,15 +49,15 @@
                   </image>
                </ImageView>
             </graphic></Button>
-           <Button fx:id="btnCourse" onAction="#btnCourseOnAction" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: #006A67;" text="  Course" textFill="WHITE">
+           <Button fx:id="btnPayment" onAction="#btnPaymentOnAction" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: #006A67;" text="  Payment" textFill="WHITE">
             <graphic>
                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                   <image>
-                     <Image url="@../images/courses.png" />
+                     <Image url="@../images/payment_icon.png" />
                   </image>
                </ImageView>
             </graphic></Button>
-      
+
            <Button fx:id="btnUsers" onAction="#btnUsersOnAction" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: #006A67;" text="  Users" textFill="WHITE">
             <graphic>
                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
@@ -78,45 +78,45 @@
    </VBox>
    <AnchorPane fx:id="subAnchorPane" layoutX="179.0" layoutY="66.0" prefHeight="550.0" prefWidth="1000.0">
       <children>
-         <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="161.0" prefWidth="398.0" style="-fx-background-color: #FF9C73; -fx-background-radius: 30px;">
+         <AnchorPane layoutX="72.0" layoutY="112.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FF9C73; -fx-background-radius: 30px;">
             <children>
-               <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="29.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="27.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@../images/student_count_icon.png" />
                   </image>
                </ImageView>
-               <Label layoutX="159.0" layoutY="9.0" prefHeight="45.0" prefWidth="219.0" text="ENROLLMENT" textFill="WHITE">
+               <Label layoutX="159.0" layoutY="9.0" prefHeight="45.0" prefWidth="150.0" text="ENROLLMENT" textFill="WHITE">
                   <font>
                      <Font name="Garuda Bold" size="24.0" />
                   </font>
                </Label>
-               <Label fx:id="student_count" layoutX="214.0" layoutY="54.0" prefHeight="75.0" prefWidth="150.0" text="10" textFill="WHITE">
+               <Label fx:id="student_count" layoutX="185.0" layoutY="30.0" prefHeight="75.0" prefWidth="150.0" text="10" textFill="WHITE">
                   <font>
                      <Font name="Jamrul" size="48.0" />
                   </font>
                </Label>
             </children>
          </AnchorPane>
-         <AnchorPane layoutX="550.0" layoutY="50.0" prefHeight="161.0" prefWidth="398.0" style="-fx-background-color: #9B86BD; -fx-background-radius: 30px;">
+         <AnchorPane layoutX="572.0" layoutY="112.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #9B86BD; -fx-background-radius: 30px;">
             <children>
-               <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="29.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="10.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@../images/courses_count_icon.png" />
                   </image>
                </ImageView>
-               <Label layoutX="159.0" layoutY="9.0" prefHeight="45.0" prefWidth="219.0" text="COURSE SUMMERY" textFill="WHITE">
+               <Label layoutX="103.0" layoutY="9.0" prefHeight="45.0" prefWidth="219.0" text="COURSE SUMMERY" textFill="WHITE">
                   <font>
                      <Font name="Garuda Bold" size="24.0" />
                   </font>
                </Label>
-               <Label fx:id="course_count" layoutX="214.0" layoutY="54.0" prefHeight="75.0" prefWidth="144.0" text="5" textFill="WHITE">
+               <Label fx:id="course_count" layoutX="230.0" layoutY="28.0" prefHeight="75.0" prefWidth="100.0" text="5" textFill="WHITE">
                   <font>
                      <Font name="Jamrul" size="48.0" />
                   </font>
                </Label>
             </children>
          </AnchorPane>
-         <LineChart layoutX="50.0" layoutY="248.0" prefHeight="291.0" prefWidth="899.0">
+         <LineChart layoutX="86.0" layoutY="314.0" prefHeight="200.0" prefWidth="553.0">
            <xAxis>
              <CategoryAxis side="BOTTOM" />
            </xAxis>
@@ -124,6 +124,17 @@
              <NumberAxis side="LEFT" />
            </yAxis>
          </LineChart>
+         <Label layoutX="257.0" prefHeight="80.0" prefWidth="458.0" text="Institute Of Management" underline="true">
+            <font>
+               <Font name="Lohit Odia" size="36.0" />
+            </font>
+         </Label>
+         <Label layoutX="261.0" layoutY="1.0" opacity="0.43" prefHeight="80.0" prefWidth="458.0" text="Institute Of Management" underline="true">
+            <font>
+               <Font name="Lohit Odia" size="36.0" />
+            </font>
+         </Label>
+         <Label layoutX="259.0" layoutY="498.0" prefHeight="16.0" prefWidth="194.0" text="Monthly Income Analysis" />
       </children>
    </AnchorPane>
    <Label fx:id="LblUserID" layoutX="1080.0" layoutY="8.0" prefHeight="36.0" prefWidth="99.0" text="U001">

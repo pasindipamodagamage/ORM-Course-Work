@@ -6,12 +6,12 @@ import lombok.*;
 
 import java.sql.Date;
 
-@Entity
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Getter
-@Setter
+@Entity
+
 public class Login {
     @Id
     private String login;

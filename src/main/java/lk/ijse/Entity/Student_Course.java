@@ -10,8 +10,8 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Entity
-@Getter
-@Setter
+//@Getter
+//@Setter
 public class Student_Course {
     @Id
     private String student_course_id;
@@ -26,6 +26,6 @@ public class Student_Course {
 
     private Date registration_date;
 
-    @OneToMany(mappedBy = "student_course", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "student_course", cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     private List<Payment> payments;
 }

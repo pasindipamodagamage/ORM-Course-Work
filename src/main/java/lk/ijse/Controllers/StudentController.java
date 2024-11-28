@@ -97,7 +97,6 @@ public class StudentController {
         getIds();
         lastLoginID();
 
-       /* lblUserID(id);*/
 
 
         tblStudents.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
@@ -118,6 +117,7 @@ public class StudentController {
         UserID(login.getUserID());
 
     }
+
     /*Access denn security ekak danamw*/
     public void UserID(String ID) throws SQLException, ClassNotFoundException {
         String UserID = ID;
@@ -271,6 +271,7 @@ clear();
                 new Alert(Alert.AlertType.ERROR, "Failed to delete Student!").show();
             }
         } catch (Exception e) {
+//            new Alert(Alert.AlertType.ERROR).show();
             new Alert(Alert.AlertType.ERROR, "An error occurred: " + e.getMessage()).show();
         }
     }

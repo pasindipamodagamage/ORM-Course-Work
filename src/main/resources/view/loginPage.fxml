@@ -62,21 +62,23 @@
             </font></Label>
       
                 <!-- Login Button -->
-          <Button fx:id="btnLogin" layoutX="32.0" layoutY="270.0" onAction="#handleLoginAction" prefHeight="33.0" prefWidth="221.0" style="-fx-background-color: #FF7F3E; -fx-text-fill: white;" text="LOGIN ">
+          <Button fx:id="btnLogin" layoutX="32.0" layoutY="270.0" onAction="#handleLoginAction" prefHeight="33.0" prefWidth="221.0" style="-fx-background-color: #FF7F3E; -fx-text-fill: white;" text="  LOGIN ">
             <font>
                <Font name="System Bold" size="18.0" />
             </font>
+            <graphic>
+               <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../images/login_icon.png" />
+                  </image>
+               </ImageView>
+            </graphic>
          </Button>
           <TextField fx:id="txtUsername" layoutX="28.0" layoutY="118.0" prefHeight="33.0" prefWidth="221.0" promptText="Enter User Name or User ID">
             <font>
                <Font size="14.0" />
             </font>
          </TextField>
-         <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="208.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-               <Image url="@../images/login_icon.png" />
-            </image>
-         </ImageView>
       </children>
    </AnchorPane>
    <ImageView fitHeight="136.0" fitWidth="145.0" layoutX="429.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
