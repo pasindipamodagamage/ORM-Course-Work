@@ -44,6 +44,16 @@ public class DashBoardController {
     @FXML
     private AnchorPane subAnchorPane;
 
+    @FXML
+    private Label admin_count;
+
+    @FXML
+    private Label course_count;
+
+
+    @FXML
+    private Label student_count;
+
     LoginDAO loginDAO = (LoginDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DaoType.Login);
     public void initialize() throws SQLException, ClassNotFoundException {
         lastLoginID();
