@@ -20,44 +20,48 @@
 
     <Button fx:id="btnBack" layoutX="913.0" layoutY="30.0" onAction="#btnBackOnAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px;" text="Back" />
 
-    <TableView fx:id="tblCourse" layoutX="50.0" layoutY="376.0" prefHeight="207.0" prefWidth="952.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;">
+    <TableView fx:id="tblCourse" layoutX="50.0" layoutY="376.0" prefHeight="207.0" prefWidth="953.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;">
         <columns>
             <TableColumn fx:id="colID" prefWidth="118.0" text="ID" />
             <TableColumn fx:id="colProgramme" prefWidth="366.0" text="Program" />
-            <TableColumn fx:id="colDuration" prefWidth="260.0" text="Duration (Months)" />
+            <TableColumn fx:id="colDuration" prefWidth="260.0" text="Duration " />
             <TableColumn fx:id="colFee" prefWidth="206.0" text="Course Fee ( Rs.)" />
         </columns>
     </TableView>
-   <AnchorPane layoutX="191.0" layoutY="105.0" prefHeight="235.0" prefWidth="543.0">
+   <AnchorPane layoutX="161.0" layoutY="98.0" prefHeight="235.0" prefWidth="543.0">
       <children>
       
-          <Label layoutX="50.0" layoutY="20.0" text="Program ID">
+          <Label layoutX="50.0" layoutY="17.0" text="Program ID">
             <font>
                <Font name="Mandali" size="18.0" />
             </font>
          </Label>
-          <Label fx:id="lblCourseID" layoutX="235.0" layoutY="15.0" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" />
       
-          <Label layoutX="50.0" layoutY="75.0" text="Program Name">
+          <Label layoutX="50.0" layoutY="75.0" text="Program Type">
             <font>
                <Font name="Mandali" size="18.0" />
             </font></Label>
-          <TextField fx:id="txtProgramName" layoutX="235.0" layoutY="75.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter Program Name" style="-fx-font-size: 16px;" />
+          <TextField fx:id="txtProgramName" layoutX="235.0" layoutY="75.0" prefHeight="35.0" prefWidth="250.0" promptText="Enter Program Name" style="-fx-font-size: 16px;" />
       
           <Label layoutX="50.0" layoutY="129.0" text="Duration">
             <font>
                <Font name="Mandali" size="18.0" />
             </font></Label>
-          <TextField fx:id="txtDuration" layoutX="235.0" layoutY="129.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter Duration" style="-fx-font-size: 16px;" />
+          <TextField fx:id="txtDuration" layoutX="235.0" layoutY="129.0" prefHeight="35.0" prefWidth="250.0" promptText="Enter Duration" style="-fx-font-size: 16px;" />
       
           <Label layoutX="50.0" layoutY="184.0" text="Course Fee">
             <font>
                <Font name="Mandali" size="18.0" />
             </font></Label>
-          <TextField fx:id="txtCourseFee" layoutX="235.0" layoutY="184.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter Course Fee" style="-fx-font-size: 16px;" />
+          <TextField fx:id="txtCourseFee" layoutX="235.0" layoutY="184.0" prefHeight="35.0" prefWidth="250.0" promptText="Enter Course Fee" style="-fx-font-size: 16px;" />
+         <Label fx:id="lblCourseID" layoutX="236.0" layoutY="20.0" prefHeight="35.0" prefWidth="250.0" text="P001">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
       </children>
    </AnchorPane>
-   <AnchorPane layoutX="758.0" layoutY="131.0" prefHeight="200.0" prefWidth="200.0">
+   <AnchorPane layoutX="755.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0">
       <children>
       
           <Button fx:id="btnAdd" layoutX="50.0" layoutY="20.0" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px;" text="Add">
