@@ -186,19 +186,6 @@ public class CourseController {
         txtProgramName.setText("");
     }
 
-    @FXML
-    void btnBackOnAction(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/DashBoard.fxml"));
-            Parent root = loader.load();
-            Stage stage = (Stage) btnBack.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.centerOnScreen();
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     @FXML
     void btnClearOnAction(ActionEvent event) throws SQLException, ClassNotFoundException {
