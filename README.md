@@ -55,6 +55,6 @@ Welcome to the **ORM Course Work** project! This system is designed to efficient
 
 ## ❤️ Contributors
 
-- [Pasindi Pamoda](https://github.com/pasindipamodagamage)
+- [Pasindi Pamoda Gamage](https://github.com/pasindipamodagamage)
 
 ---
