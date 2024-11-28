@@ -20,7 +20,7 @@
 
     <Button fx:id="btnBack" layoutX="913.0" layoutY="30.0" onAction="#btnBackOnAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px;" text="Back" />
 
-    <TableView fx:id="tblCourse" layoutX="50.0" layoutY="376.0" prefHeight="207.0" prefWidth="953.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;">
+    <TableView fx:id="tblCourse" layoutX="50.0" layoutY="376.0" prefHeight="207.0" prefWidth="953.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" >
         <columns>
             <TableColumn fx:id="colID" prefWidth="118.0" text="ID" />
             <TableColumn fx:id="colProgramme" prefWidth="366.0" text="Program" />

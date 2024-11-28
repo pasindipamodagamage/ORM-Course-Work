@@ -236,12 +236,14 @@ public class CourseController {
             if (isValied()){boolean isSave = courseBO.update(courseDTO);
 
                 if (isSave) {
+
                     new Alert(Alert.AlertType.CONFIRMATION, "Course Update successfully!").show();
                     clear();
                     loadAll();
                 }
             }
             else{
+//                new Alert(Alert.AlertType.ERROR).show();
                 new Alert(Alert.AlertType.ERROR, "Course not Update successfully!").show();
             }
 
