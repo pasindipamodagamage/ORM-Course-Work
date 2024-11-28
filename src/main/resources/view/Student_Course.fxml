@@ -21,9 +21,6 @@
         <TableColumn fx:id="colStudentCourseId" prefWidth="224.0" text="Student Course ID" />
     </columns>
 </TableView>
-
-<!-- Back Button -->
-<Button fx:id="btnBack" layoutX="856.0" layoutY="36.0" onAction="#btnBackOnAction" prefWidth="100.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px;" text="Back" />
    <Label layoutX="50.0" layoutY="30.0" text="Student Registration" underline="true">
       <font>
          <Font name="FreeSerif Bold" size="36.0" />

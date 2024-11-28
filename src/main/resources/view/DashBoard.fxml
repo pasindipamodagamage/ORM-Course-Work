@@ -73,7 +73,7 @@
             </graphic></Button>
       </children>
    </VBox>
-   <AnchorPane fx:id="subAnchorPane" layoutX="179.0" layoutY="66.0" prefHeight="550.0" prefWidth="1000.0">
+   <AnchorPane fx:id="subAnchorPane" layoutX="179.0" layoutY="56.0" prefHeight="550.0" prefWidth="1000.0">
       <children>
          <AnchorPane layoutX="136.0" layoutY="333.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FF9C73; -fx-background-radius: 30px;">
             <children>

@@ -117,7 +117,7 @@ public class UserController {
         String position = user.getPosition();
 
         if ("Admin".equals(position)) {
-            btnBack.setDisable(false);
+//            btnBack.setDisable(false);
             btnClear.setDisable(false);
             btnAdd.setDisable(true);
             btnUpdate.setDisable(true);
@@ -126,7 +126,7 @@ public class UserController {
             btnAdd.setDisable(false);
             btnUpdate.setDisable(false);
             btnDelete.setDisable(false);
-            btnBack.setDisable(false);
+//            btnBack.setDisable(false);
             btnClear.setDisable(false);
         }
     }

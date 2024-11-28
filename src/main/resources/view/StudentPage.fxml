@@ -13,9 +13,6 @@
 
 <AnchorPane prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controllers.StudentController">
 
-<!-- Back Button -->
-<Button fx:id="btnBack" layoutX="20.0" layoutY="93.0" onAction="#btnBackOnAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px;" text="Back" />
-
 <!-- Table View for Displaying Student Details -->
 <TableView fx:id="tblStudents" layoutX="40.0" layoutY="339.0" prefHeight="198.0" prefWidth="923.0" style="-fx-background-color: white; -fx-border-color: #dddddd;">
     <columns>

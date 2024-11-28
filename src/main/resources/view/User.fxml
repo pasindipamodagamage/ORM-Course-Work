@@ -15,9 +15,6 @@
 
 <AnchorPane prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controllers.UserController">
 
-    <!-- Back Button -->
-    <Button fx:id="btnBack" layoutX="907.0" layoutY="30.0" onAction="#btnBackOnAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Back" />
-
     <!-- TableView -->
     <TableView fx:id="tblUsers" layoutX="34.0" layoutY="356.0" prefHeight="172.0" prefWidth="931.0">
         <columns>

@@ -125,7 +125,7 @@ public class StudentController {
         String position = user.getPosition();
 
         if (position.equals("Admin")) {
-            btnBack.setDisable(false);
+//            btnBack.setDisable(false);
             btnClear.setDisable(false);
             btnAdd.setDisable(true);
             btnUpdate.setDisable(true);
@@ -135,7 +135,7 @@ public class StudentController {
             btnAdd.setDisable(false);
             btnUpdate.setDisable(false);
             btnDelete.setDisable(false);
-            btnBack.setDisable(false);
+//            btnBack.setDisable(false);
             btnClear.setDisable(false);
         }
     }

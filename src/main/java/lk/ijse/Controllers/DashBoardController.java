@@ -7,6 +7,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import lk.ijse.DAO.DAOFactory;
 import lk.ijse.DAO.Impl.LoginDAO;
@@ -38,6 +40,9 @@ public class DashBoardController {
 
     public  Label show_time;
     public Label show_date;
+
+    @FXML
+    private AnchorPane subAnchorPane;
 
     LoginDAO loginDAO = (LoginDAO) DAOFactory.getDaoFactory().getDAO(DAOFactory.DaoType.Login);
     public void initialize() throws SQLException, ClassNotFoundException {
@@ -74,12 +79,12 @@ public class DashBoardController {
     @FXML
     void btnCourseOnAction(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/CoursePage.fxml"));
-            Parent root = loader.load();
-            Stage stage = (Stage) btnCourse.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.centerOnScreen();
-            stage.show();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/CoursePage.fxml"));
+            Pane registerPane = fxmlLoader.load();
+            subAnchorPane.getChildren().clear();
+            subAnchorPane.getChildren().add(registerPane);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -88,12 +93,14 @@ public class DashBoardController {
     @FXML
     void btnLogoutOnAction(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/loginPage.fxml"));
-            Parent root = loader.load();
-            Stage stage = (Stage) btnLogout.getScene().getWindow();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/loginPage.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage = (Stage) btnUsers.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.centerOnScreen();
             stage.show();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -102,12 +109,11 @@ public class DashBoardController {
     @FXML
     void btnPaymentOnAction(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/PaymentHistoryPage.fxml"));
-            Parent root = loader.load();
-            Stage stage = (Stage) btnPayment.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.centerOnScreen();
-            stage.show();
+
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/PaymentHistoryPage.fxml"));
+            Pane registerPane = fxmlLoader.load();
+            subAnchorPane.getChildren().clear();
+            subAnchorPane.getChildren().add(registerPane);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -117,11 +123,9 @@ public class DashBoardController {
     void btnStudentOnAction(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/StudentPage.fxml"));
-            Parent root = loader.load();
-            Stage stage = (Stage) btnStudent.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.centerOnScreen();
-            stage.show();
+            Pane registerPane = loader.load();
+            subAnchorPane.getChildren().clear();
+            subAnchorPane.getChildren().add(registerPane);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -131,11 +135,9 @@ public class DashBoardController {
     void btnStudentRegisterOnAction(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Student_Course.fxml"));
-            Parent root = loader.load();
-            Stage stage = (Stage) btnStudentRegister.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.centerOnScreen();
-            stage.show();
+            Pane registerPane = loader.load();
+            subAnchorPane.getChildren().clear();
+            subAnchorPane.getChildren().add(registerPane);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -146,7 +148,7 @@ public class DashBoardController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/DashBoard.fxml"));
             Parent root = loader.load();
-            Stage stage = (Stage) btnStudentRegister.getScene().getWindow();
+            Stage stage = (Stage) btnUsers.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.centerOnScreen();
             stage.show();
@@ -160,11 +162,9 @@ public class DashBoardController {
     void btnUsersOnAction(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/User.fxml"));
-            Parent root = loader.load();
-            Stage stage = (Stage) btnUsers.getScene().getWindow();
-            stage.setScene(new Scene(root));
-            stage.centerOnScreen();
-            stage.show();
+            Pane registerPane = loader.load();
+            subAnchorPane.getChildren().clear();
+            subAnchorPane.getChildren().add(registerPane);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1050.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controllers.CourseController">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controllers.CourseController">
 
     <Label layoutX="50.0" layoutY="30.0" text="Course" underline="true">
         <font>
@@ -18,9 +18,7 @@
         </font>
     </Label>
 
-    <Button fx:id="btnBack" layoutX="913.0" layoutY="30.0" onAction="#btnBackOnAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px;" text="Back" />
-
-    <TableView fx:id="tblCourse" layoutX="50.0" layoutY="376.0" prefHeight="207.0" prefWidth="953.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;" >
+    <TableView fx:id="tblCourse" layoutX="23.0" layoutY="332.0" prefHeight="207.0" prefWidth="953.0" style="-fx-background-color: white; -fx-border-color: #bdbdbd; -fx-font-size: 16px;">
         <columns>
             <TableColumn fx:id="colID" prefWidth="118.0" text="ID" />
             <TableColumn fx:id="colProgramme" prefWidth="366.0" text="Program" />
@@ -28,7 +26,7 @@
             <TableColumn fx:id="colFee" prefWidth="206.0" text="Course Fee ( Rs.)" />
         </columns>
     </TableView>
-   <AnchorPane layoutX="161.0" layoutY="98.0" prefHeight="235.0" prefWidth="543.0">
+   <AnchorPane layoutX="115.0" layoutY="76.0" prefHeight="235.0" prefWidth="543.0">
       <children>
       
           <Label layoutX="50.0" layoutY="17.0" text="Program ID">
@@ -61,7 +59,7 @@
          </Label>
       </children>
    </AnchorPane>
-   <AnchorPane layoutX="755.0" layoutY="108.0" prefHeight="200.0" prefWidth="200.0">
+   <AnchorPane layoutX="709.0" layoutY="86.0" prefHeight="200.0" prefWidth="200.0">
       <children>
       
           <Button fx:id="btnAdd" layoutX="50.0" layoutY="20.0" onAction="#btnAddOnAction" prefHeight="35.0" prefWidth="125.0" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px;" text="Add">
