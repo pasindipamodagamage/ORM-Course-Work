@@ -74,7 +74,7 @@
                </ImageView>
             </graphic>
          </Button>
-          <TextField fx:id="txtUsername" layoutX="28.0" layoutY="118.0" prefHeight="33.0" prefWidth="221.0" promptText="Enter User Name or User ID">
+          <TextField fx:id="txtUsername" layoutX="28.0" layoutY="118.0" prefHeight="33.0" prefWidth="221.0" promptText="Enter User Name">
             <font>
                <Font size="14.0" />
             </font>
